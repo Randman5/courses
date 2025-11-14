@@ -19,9 +19,9 @@ class LoadCoursesUseCase(
         }
 
         return when(sortPublishDate){
-            SortOrder.ASC -> courses.sortedBy { sortPublishDate }
-            SortOrder.DESC -> courses.sortedBy { sortPublishDate }.reversed()
-            else -> courses.sortedBy { sortPublishDate }
+            SortOrder.ASC -> courses.sortedBy { it.publishDate }
+            SortOrder.DESC -> courses.sortedBy { it.publishDate }.reversed()
+            else -> courses.sortedBy { it.publishDate }
         }
     }
 }

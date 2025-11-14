@@ -2,6 +2,7 @@ package ru.effect.coursesapp.data.local.db.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.util.Date
 
 @Entity(tableName = "courses")
 data class CourseEntity(
@@ -10,7 +11,7 @@ data class CourseEntity(
     val text: String,
     val price: String,
     val rate: String,
-    val startDate: String,
+    val startDate: Date,
     var hasLike: Boolean,
-    val publishDate: String
+    val publishDate: Date
 )

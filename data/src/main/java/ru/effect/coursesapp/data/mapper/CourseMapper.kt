@@ -1,5 +1,4 @@
 package ru.effect.coursesapp.data.mapper
-
 import ru.effect.coursesapp.data.Dto.CourseDto
 import ru.effect.coursesapp.data.local.db.entity.CourseEntity
 import ru.effect.coursesapp.domain.models.CourseModel
@@ -17,10 +16,6 @@ class CourseMapper {
             hasLike = dto.hasLike,
             publishDate = dto.publishDate
         )
-    }
-
-    fun toDomainList(dtos: List<CourseDto>): List<CourseModel> {
-        return dtos.map { toDomain(it) }
     }
 
     fun fromEntity(entity: CourseEntity): CourseModel = CourseModel(

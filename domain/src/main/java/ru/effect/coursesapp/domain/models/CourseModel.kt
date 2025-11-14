@@ -1,5 +1,7 @@
 package ru.effect.coursesapp.domain.models
 
+import java.util.Date
+
 
 data class CourseModel(
     val id: Int,
@@ -7,7 +9,7 @@ data class CourseModel(
     val text: String,
     val price: String,
     val rate: String,
-    val startDate: String,
+    val startDate: Date,
     var hasLike: Boolean,
-    val publishDate: String
+    val publishDate: Date
 )

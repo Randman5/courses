@@ -23,10 +23,10 @@ class HomeFragmentViewModel(
     private val errorMutable = MutableLiveData<String>()
     val errorLive: LiveData<String> = errorMutable
 
-    private val showLoaderMutable = MutableLiveData<Boolean>(true)
+    private val showLoaderMutable = MutableLiveData(true)
     val showLoaderLive: LiveData<Boolean> = showLoaderMutable
 
-    private val sortOrderMutable = MutableLiveData<SortOrder>(SortOrder.ASC)
+    private val sortOrderMutable = MutableLiveData(SortOrder.DESC)
     val sortLive: LiveData<SortOrder> = sortOrderMutable
 
     init {
