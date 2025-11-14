@@ -1,5 +1,7 @@
 package ru.effect.coursesapp.ui.presentation.login
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.text.Editable
 import android.text.InputFilter
@@ -87,6 +89,16 @@ class LoginFragment : Fragment() {
             }
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
         })
+
+        binding.vkButton.setOnClickListener{
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.com/"))
+            startActivity(intent)
+        }
+
+        binding.okButton.setOnClickListener{
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ok.ru/"))
+            startActivity(intent)
+        }
     }
 
     private val noCyrillicFilter = InputFilter { source, _, _, _, _, _ ->
