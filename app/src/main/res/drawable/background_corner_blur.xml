@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Фон -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="#32333A4D"/> <!-- Белый с прозрачностью -->
+        </shape>
+    </item>
+
+    <!-- Имитация "размытия" градиентом -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <gradient
+                android:startColor="#32333A4D"
+                android:centerColor="#32333A4D"
+                android:endColor="#32333A4D"
+                android:angle="90"/>
+        </shape>
+    </item>
+</layer-list>

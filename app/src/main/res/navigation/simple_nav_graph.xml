@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/simple_nav_graph"
+    app:startDestination="@id/loginFragment"> <!-- Экран без нижнего меню -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.effect.coursesapp.ui.presentation.login.LoginFragment"
+        android:label="@string/authorization"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment> <!-- Экраны с нижней навигацией -->
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ru.effect.coursesapp.ui.presentation.home.HomeFragment"
+        android:label="@string/main"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="ru.effect.coursesapp.ui.presentation.favorite.FavoriteFragment"
+        android:label="@string/favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ru.effect.coursesapp.ui.presentation.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

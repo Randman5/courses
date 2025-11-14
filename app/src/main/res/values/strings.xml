@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">coursesApp</string>
+
+    <string name="authorization">Авторизация</string>
+    <string name="main">Главная</string>
+    <string name="favorite">Избранное</string>
+    <string name="profile">Профиль</string>
+    <string name="enter">Вход</string>
+    <string name="email">Email</string>
+    <string name="email_placeholder">example@gmail.com</string>
+    <string name="password">Пароль</string>
+    <string name="enter_password_placeholder">Введите пароль</string>
+    <string name="have_not_account">Нету аккаунта?</string>
+    <string name="registration">Регистрация</string>
+    <string name="forgot_password">Забыл пароль</string>
+    <string name="more">Подробнее</string>
+    <string name="course_item_title">Java-разработчик с нуля</string>
+    <string name="course_item_description">Освойте backend-разработку \n и программирование на Java, фреймворки Spring и Maven, работу с базами данных и API. Создайте свой собственный проект, собрав портфолио и став востребованным специалистом для любой IT компании.</string>
+    <string name="course_item_date">22 Мая 2024</string>
+    <string name="write_to_support">Написать в поддержку</string>
+    <string name="settings">Настройки</string>
+    <string name="logout">Выйти из аккаунта</string>
+    <string name="your_courses">Ваши курсы</string>
+    <string name="forgot_email">неправильно введен email</string>
+
+
+</resources>

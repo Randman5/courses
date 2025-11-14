@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Состояние disabled -->
+    <item android:color="@color/green_90_transparent" android:state_enabled="false"/>
+    <!-- Состояние enabled -->
+    <item android:color="@color/green" android:state_enabled="true"/>
+</selector>

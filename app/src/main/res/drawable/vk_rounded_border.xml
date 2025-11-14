@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Фон с закруглениями -->
+    <item android:drawable="@drawable/vk_rectangle" />
+
+    <!-- Иконка по центру -->
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/vk" />
+
+</layer-list>
